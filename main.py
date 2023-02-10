@@ -22,7 +22,7 @@ args.add_argument('--seed', default=50, type=int)
 args.add_argument('--weight-decay', default=0.0, type=float)
 
 args = args.parse_args()
-init_seed(args.seed)
+init_seed(args.seed)  # init seed
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 load_data_func = None
